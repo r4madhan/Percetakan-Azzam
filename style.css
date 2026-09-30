@@ -1,0 +1,193 @@
+/* Reset Basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background Utama: Biru Dongker (Navy Blue) */
+body {
+    background-color: #0d1b2a;
+    color: #ffffff;
+}
+
+/* NAVBAR & HEADER */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0d1b2a;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo Alignment */
+.logo, .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text h1 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 1.1;
+}
+
+.logo-text h2 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-text p {
+    font-size: 0.62rem;
+    color: #a0aec0;
+    text-align: left;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.btn-cari {
+    background-color: #f59e0b;
+    color: #000000;
+    padding: 6px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* WRAPPER KOTAK ABU-ABU MENYATU */
+.container-abu {
+    background-color: #d1d5db; /* Warna abu-abu menyatu tanpa sekat */
+    margin: 0 40px;
+    padding-bottom: 40px;
+}
+
+/* BANNER HERO */
+.banner-hero {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.banner-chart {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 300px;
+    background-color: #d1d5db;
+    overflow: hidden;
+}
+
+.bar {
+    flex: 1;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.bar-1 { height: 100%; background: linear-gradient(to bottom, #991b1b, #ef4444); z-index: 7; }
+.bar-2 { height: 86%; background: linear-gradient(to bottom, #c2410c, #f97316); z-index: 6; }
+.bar-3 { height: 72%; background: linear-gradient(to bottom, #b45309, #eab308); z-index: 5; }
+.bar-4 { height: 58%; background: linear-gradient(to bottom, #15803d, #22c55e); z-index: 4; }
+.bar-5 { height: 44%; background: linear-gradient(to bottom, #1e3a8a, #2563eb); z-index: 3; }
+.bar-6 { height: 30%; background: linear-gradient(to bottom, #4338ca, #6366f1); z-index: 2; }
+.bar-7 { height: 16%; background: linear-gradient(to bottom, #581c87, #a855f7); z-index: 1; }
+
+/* SECTION PRODUK */
+.produk-section {
+    background-color: transparent;
+    color: #0d1b2a;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.produk-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.grid-produk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Tombol Produk */
+.btn-produk {
+    background-color: #0d1b2a;
+    color: #facc15;
+    border: none;
+    padding: 12px 28px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+/* FOOTER INFORMASI */
+.footer-info {
+    background-color: #0d1b2a;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 0.75rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Ikon Font Awesome */
+.icon-jam {
+    color: #f59e0b;
+    font-size: 1.8rem;
+}
+
+.icon-lokasi {
+    color: #ef4444;
+    font-size: 1.8rem;
+}
+
+.icon-wa {
+    color: #22c55e;
+    font-size: 1.8rem;
+}
+
+.info-text {
+    color: #ffffff;
+    line-height: 1.4;
+}
