@@ -191,3 +191,27 @@ body {
     color: #ffffff;
     line-height: 1.4;
 }
+/* --- RESPONSIVE LAYOUT (PENS) --- */
+
+/* 1. Tampilan Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .banner, .katalog-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 2. Tampilan HP Besar (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* 3. Tampilan HP Kecil (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+}

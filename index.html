@@ -9,27 +9,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<p id="tanggal" style="text-align: center; font-weight: bold; margin-top: 10px;"></p>
     <!-- NAVBAR & HEADER -->
     <header class="navbar">
         <div class="nav-left">
-            <a href="#" class="nav-link">CETAK CUSTOM</a>
+         <a href="#" class="nav-link">CETAK CUSTOM</a>
         </div>
         
         <!-- LOGO DENGAN GAMBAR BUKU & CIPRATAN TINTA -->
         <div class="logo">
-            <svg class="logo-svg" viewBox="0 0 100 80" width="38" height="38">
-                <path d="M20,25 C20,15 35,10 50,22 C65,10 80,15 80,25 L80,65 C80,55 65,50 50,62 C35,50 20,55 20,65 Z" fill="#ffffff" stroke="#000" stroke-width="2"/>
-                <path d="M50,22 L50,62" stroke="#0d1b2a" stroke-width="2"/>
-                <circle cx="35" cy="12" r="4" fill="#facc15"/>
-                <circle cx="50" cy="8" r="5" fill="#3b82f6"/>
-                <circle cx="65" cy="14" r="4" fill="#ec4899"/>
-                <path d="M35,12 Q42,18 50,22 Q58,18 65,14" fill="none" stroke="#64748b" stroke-width="1.5"/>
-            </svg>
-            <div class="logo-text">
-                <h1>PERCETAKAN @zz@m</h1>
-                <p>HASIL RAPI, HARGA BERSAHABAT</p>
-            </div>
+        <svg class="logo-svg" viewBox="0 0 100 80" width="38" height="38">
+             <path d="M20,25 C20,15 35,10 50,22 C65,10 80,15 80,25 L80,65 C80,55 65,50 50,62 C35,50 20,55 20,65 Z" fill="#ffffff" stroke="#000" stroke-width="2"/>
+             <path d="M50,22 L50,62" stroke="#0d1b2a" stroke-width="2"/>
+             <circle cx="35" cy="12" r="4" fill="#facc15"/>
+             <circle cx="50" cy="8" r="5" fill="#3b82f6"/>
+             <circle cx="65" cy="14" r="4" fill="#ec4899"/>
+             <path d="M35,12 Q42,18 50,22 Q58,18 65,14" fill="none" stroke="#64748b" stroke-width="1.5"/>
+        </svg>
+        <div class="logo-text">
+             <h1>PERCETAKAN @zz@m</h1>
+             <p>HASIL RAPI, HARGA BERSAHABAT</p>
+        </div>
         </div>
         
         <div class="nav-right">
@@ -120,6 +120,14 @@
             </div>
         </div>
     </footer>
-
+<script>
+    const sekarang = new Date();
+    document.getElementById('tanggal').textContent = sekarang.toLocaleDateString('id-ID', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+  </script>
 </body>
 </html>
